@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Tấn Tài on the mic"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgviewdia"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_weight="10"
+        android:padding="10dp"
+        android:src="@drawable/sgr"
+        app:civ_border_overlay="true"
+        app:civ_circle_background_color="#FFFFFF">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <SeekBar
+            android:id="@+id/sbMusic"
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></SeekBar>
+
+        <TextView
+            android:id="@+id/tvtimelive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btnStart"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="@string/on"
+            android:textColor="@color/black"
+            android:textSize="34dp"
+            android:textStyle="bold"></TextView>
+
+
+        <ImageButton
+            android:src="@drawable/play"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:id="@+id/imgbtnplay"
+            android:layout_width="70dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="70dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:src="@drawable/pause"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:id="@+id/imgbtnPause"
+            android:layout_width="70dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="70dp">
+
+        </ImageButton>
+        <ImageButton
+
+            android:src="@drawable/fastfwd"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:id="@+id/imgbtnfastfwd"
+            android:layout_width="70dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="70dp">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/btOn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textView1"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="135dp"-->
+<!--        android:text="Mở" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btOff"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/btOn"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Tắt" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btTua"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignLeft="@+id/btOff"-->
+<!--        android:layout_below="@+id/btOff"-->
+<!--        android:layout_marginTop="19dp"-->
+<!--        android:text="Tua tới 1'00 " />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btStart"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/btOff"-->
+<!--        android:layout_alignLeft="@+id/btOff"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="170dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginTop="139dp"-->
+<!--        android:layout_marginEnd="153dp"-->
+<!--        android:text="Start" />-->
+
+</LinearLayout>
